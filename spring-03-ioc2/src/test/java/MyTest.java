@@ -15,13 +15,16 @@ public class MyTest {
         // 测试别名
         User useralias = (User) context.getBean("asdfdsfdsf");
         useralias.showname();
-//        user.showschool();
-
 
 
         System.out.println("==============================================");
 
-        UserT user2 = (UserT) context.getBean("user");
+        UserT user2 = (UserT) context.getBean("user2");
         user2.show();
+
+        System.out.println("==============================================");
+
+        UserT user3 = (UserT) context.getBean("u2");
+        user3.show();
     }
 }

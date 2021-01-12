@@ -6,6 +6,8 @@ public class UserT {
     public UserT(String name) {
         System.out.println("UserT被创建了");
     }
+
+
     public String getName() {
         return name;
     }
@@ -15,7 +17,7 @@ public class UserT {
     }
 
     public void show() {
-        System.out.println("name " + this.name);
+        System.out.println("name ==> " + this.name);
     }
 
 
