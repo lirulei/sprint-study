@@ -12,18 +12,19 @@ public class User {
         this.school = school;
     }
 
-    public User(String name, String school) {
-        this.name = name;
-        this.school = school;
-    }
+//    public User(String name, String school) {
+//        this.name = name;
+//        this.school = school;
+//    }
 
 //    public User() {
 //        System.out.println("输出的是：User的无参构造");
 //    }
 //
-//    public User(String name) {
-//        this.name = name;
-//    }
+    public User(String name) {
+        this.name = name;
+    }
+
 //
 //    public User(String school) {
 //        this.school = school;

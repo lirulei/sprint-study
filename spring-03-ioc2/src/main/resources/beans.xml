@@ -11,7 +11,7 @@
 
         <!--  最常用的： 直接通过参数名 -->
         <constructor-arg name="name" value="Leee 五狗"/>
-        <constructor-arg name="school" value="Beijing"/>
+<!--        <constructor-arg name="school" value="Beijing"/>-->
     </bean>
 
 
