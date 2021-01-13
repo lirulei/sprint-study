@@ -10,11 +10,11 @@ public class MyTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         User user = (User) context.getBean("user");
-        user.showname();
+        user.show();
 
         // 测试别名
         User useralias = (User) context.getBean("asdfdsfdsf");
-        useralias.showname();
+        useralias.show();
 
 
         System.out.println("==============================================");
