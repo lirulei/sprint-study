@@ -62,6 +62,8 @@
             <props>
                 <prop key="学号">13141516</prop>
                 <prop key="班级">0502</prop>
+                <prop key="url">www.qq.com</prop>
+                <prop key="username">leeergou</prop>
             </props>
         </property>
 
