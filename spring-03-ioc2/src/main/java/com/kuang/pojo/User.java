@@ -1,9 +1,14 @@
 package com.kuang.pojo;
 
+/***
+ * @author lee
+ */
 public class User {
     private String name;
 
-    // 构造器方式注入
+    /***
+     * description 构造器(有参)方式注入
+     */
     public User(String name) {
         this.name = name;
     }
@@ -12,7 +17,9 @@ public class User {
         return name;
     }
 
-    // setter方式注入
+    /***
+     * description setter方式注入
+     */
     public void setName(String name) {
         this.name = name;
     }
