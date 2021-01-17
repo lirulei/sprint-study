@@ -8,10 +8,7 @@ public class MyTest {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Student student = (Student) context.getBean("student");
-//        System.out.println(student.getName());
-//        System.out.println(student.getWife());
         System.out.println(student.toString());
-
 
         /*  输出的结果如下：
          * Student{
