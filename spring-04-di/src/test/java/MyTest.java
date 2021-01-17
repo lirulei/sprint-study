@@ -13,7 +13,7 @@ public class MyTest {
         System.out.println(student.toString());
 
 
-        /***  输出的结果如下：
+        /*  输出的结果如下：
          * Student{
          *  name='Lee二狗',
          *  address=Address{address='上海市闵行区'},
@@ -31,7 +31,7 @@ public class MyTest {
     @Test
     public void test2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
-        User user = context.getBean("user2", User.class);   /** 这里加了 User.class 显式定义后，就不用强制转换了 */
+        User user = context.getBean("user2", User.class);   /* 这里加了 User.class 显式定义后，就不用强制转换了 */
         System.out.println(user.toString());
     }
 
