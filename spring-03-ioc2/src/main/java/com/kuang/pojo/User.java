@@ -7,7 +7,7 @@ public class User {
     private String name;
 
     /***
-     * description 构造器(有参)方式注入
+     * 构造器(有参)方式注入
      */
     public User(String name) {
         this.name = name;
@@ -18,7 +18,7 @@ public class User {
     }
 
     /***
-     * description setter方式注入
+     * setter方式注入
      */
     public void setName(String name) {
         this.name = name;
