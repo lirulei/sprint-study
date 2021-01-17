@@ -1,4 +1,6 @@
 import com.kuang.pojo.Student;
+import com.kuang.pojo.User;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -24,12 +26,17 @@ public class MyTest {
          *  }
          */
 
-
-
-
-
-
-
-
     }
+
+    @Test
+    public void test2() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
+        User user = context.getBean("user2", User.class);   /** 这里加了 User.class 显式定义后，就不用强制转换了 */
+        System.out.println(user.toString());
+    }
+
+
+
+
+
 }
