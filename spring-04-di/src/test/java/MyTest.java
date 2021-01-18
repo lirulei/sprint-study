@@ -29,7 +29,13 @@ public class MyTest {
     public void test2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
         User user = context.getBean("user2", User.class);   /* 这里加了 User.class 显式定义后，就不用强制转换了 */
+        User user2 = context.getBean("user2", User.class);   /* 这里加了 User.class 显式定义后，就不用强制转换了 */
         System.out.println(user.toString());
+        System.out.println("================ 下面是测试内容 ================");
+
+        System.out.println( user.hashCode());
+        System.out.println( user2.hashCode());
+        System.out.println( user == user2 );
     }
 
 
