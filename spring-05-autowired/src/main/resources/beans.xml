@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="com.kuang.pojo.Cat"></bean>
+    <bean id="dog2222" class="com.kuang.pojo.Dog"></bean>
+
+    <!-- 人工定义 -->
+    <!--        <bean id="people" class="com.kuang.pojo.People">-->
+    <!--            <property name="name" value="无天"></property>-->
+    <!--            <property name="dog" ref="dog"></property>-->
+    <!--            <property name="cat" ref="cat"></property>-->
+    <!--        </bean>-->
+
+    <!-- 自动装配 -->
+    <!--   byName 会自动再容器上下文中查找，和自己对象set方法后面的值对应的beanid 。 必须保证类型是全局唯一(bean有2个叫做dog的就报错) -->
+    <!--    <bean id="people" class="com.kuang.pojo.People" autowire="byName">-->
+    <!--        <property name="name" value="无天"></property>-->
+    <!--    </bean>-->
+
+
+    <!--   byType 会自动再容器上下文中查找，和自己对象type一致的beanid -->
+    <bean id="people" class="com.kuang.pojo.People" autowire="byType">
+        <property name="name" value="无天"></property>
+    </bean>
+
+</beans>
