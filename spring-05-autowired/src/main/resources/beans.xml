@@ -7,8 +7,7 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--配置注解的支持-->
-    <context:annotation-config/>
+
 
     <!--    <bean id="cat" class="com.kuang.pojo.Cat"></bean>-->
     <!--    <bean id="dog2222" class="com.kuang.pojo.Dog"></bean>-->
@@ -32,8 +31,13 @@
     <!--    </bean>-->
 
 
+    <!--开启注解的支持-->
+    <context:annotation-config/>
+
     <bean id="cat" class="com.kuang.pojo.Cat"></bean>
+    <bean id="cat6666" class="com.kuang.pojo.Cat"></bean>
     <bean id="dog" class="com.kuang.pojo.Dog"></bean>
+    <bean id="dog222" class="com.kuang.pojo.Dog"></bean>
     <bean id="people" class="com.kuang.pojo.People"></bean>
 
 
